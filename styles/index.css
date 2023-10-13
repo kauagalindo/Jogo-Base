@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.titulo {
+.titulo h2 {
     font-family: "Pixelify Sans";
     text-align: center;
     padding-top: 1em;
@@ -12,6 +12,27 @@
     text-transform: uppercase;
     font-size: 2em;
     text-shadow: 0 0 24px green;
+    transition: 0.4s;
+}
+
+.titulo h2:hover {
+    letter-spacing: 0.2em;
+}
+
+.titulo h2:hover::before {
+ content: "↽------";
+ 
+}
+
+.titulo h3 a {
+    font-family: "Pixelify Sans";
+    margin-left: 1em;
+    padding-top: 1em;
+    text-transform: uppercase;
+    text-shadow: 0 0 24px rgb(255, 1, 255);
+    color: rgb(255, 1, 255);
+    text-decoration: none;
+
 }
 
 body {
